@@ -1,0 +1,9 @@
+@font-face {
+  font-family: IranYekan;
+  src: url(./fonts/iranyekanwebregular.ttf);
+}
+:root {
+  font-family: IranYekan;
+  line-height: 1.5;
+  font-weight: 400;
+}
