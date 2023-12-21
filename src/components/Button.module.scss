@@ -1,0 +1,24 @@
+@import '../mixins';
+.dv_product_button {
+  @include mixin-flex();
+  @include mixin-border();
+    width: 90%;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .dv_product_button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 2px #e1e1e1;
+  }
+  .dv_product_name {
+    @include mixin-font-size();
+    @include mixin-font-weight();
+    text-align: right;
+  }
+  .dv_product_image {
+    @include mixin-border();
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  

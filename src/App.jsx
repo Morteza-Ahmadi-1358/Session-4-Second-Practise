@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import styles from './App.module.scss'
 import Button from './components/Button'
 import Panel from './components/Panel'
 
@@ -21,15 +21,15 @@ function App() {
     })
   }
   return (
-    <div className='dv-main-content'>
-      <div className='dv-buttons'>
+    <div className={styles.dv_main_content}>
+      <div className={styles.dv_buttons}>
         {
           products.map((product) => {
             return <Button key={product.Id} data={product} getProductById={getProductById}/>
           })
         }
       </div>
-      <div className='dv-panels'><Panel product={product}/></div>
+      <div className={styles.dv_panels}><Panel product={product}/></div>
     </div>
   )
 }

@@ -1,0 +1,24 @@
+@mixin mixin-main {
+  border: 1px solid #c1c1c1;
+  border-radius: 7px;
+}
+@mixin mixin-flex {
+  display: flex;
+  align-items: center;
+}
+@mixin mixin-margin {
+  margin: 10px auto;
+}
+@mixin mixin-border {
+  border: 1px solid #e1e1e1;
+}
+@mixin mixin-font-size {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+@mixin mixin-font-weight {
+  font-weight: 700;
+}
+@mixin mixin-text-right {
+  text-align: right;
+}

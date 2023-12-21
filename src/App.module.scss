@@ -1,0 +1,19 @@
+@import 'mixins';
+.dv_main_content {
+  @include mixin-main();
+  @include mixin-flex();
+  @include mixin-margin();
+  width: 90%;
+  justify-content: center;
+  box-shadow: 1px 1px 5px 2px #e1e1e1;
+}
+.dv_buttons {
+  @include mixin-flex();
+  @include mixin-margin();
+  flex-basis: 30%;
+  flex-direction: column;
+  min-width: 270px;
+}
+.dv_panels {
+  flex-basis: 70%;
+}

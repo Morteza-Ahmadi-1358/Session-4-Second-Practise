@@ -1,0 +1,61 @@
+@import '../mixins';
+.dv_product_Panel {
+  @include mixin-flex();
+  @include mixin-border();
+  width: 99%;
+}
+.dv_product_name_panel {
+  @include mixin-font-size();
+  @include mixin-font-weight();
+  @include mixin-text-right();
+  margin: 100px auto 40px auto;
+}
+.dv_product_image_panel {
+  width: 100%;
+}
+.dv_content_box {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .dv_image_box {
+    flex-basis: 40%;
+  }
+  .dv_product_description {
+    @include mixin-margin();
+    @include mixin-font-size();
+    @include mixin-font-weight();
+    @include mixin-text-right();
+    line-height: 2rem;
+  }
+  .dv_product_stock {
+    @include mixin-margin();
+    @include mixin-font-size();
+    @include mixin-font-weight();
+    width: 100%;
+    color: #ff1749;
+    text-align: center;
+  }
+  .price_box{
+    @include mixin-flex();
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px 0px 115px 0px;
+  }
+  .dv_product_price {
+    @include mixin-font-size();
+    @include mixin-font-weight();
+    @include mixin-text-right();
+    width: 100%;
+    color: #c1c1c1;
+    text-decoration: line-through;
+  }
+  .dv_product_discount {
+    @include mixin-font-weight();
+    width: 100%;
+    color: #ff1749;
+    text-align: left;
+  }
